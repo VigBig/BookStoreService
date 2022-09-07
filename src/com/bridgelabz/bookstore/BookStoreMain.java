@@ -22,12 +22,6 @@ public class BookStoreMain {
 
                 case 1:
                     bookStore.addBookDetails();
-//                    for (Books bookElement:
-//                            bookStore.booksList) {
-//
-//                        System.out.println(bookElement);
-//
-//                    }
                     break;
                 case 2:
                     bookStore.displayBooks();
