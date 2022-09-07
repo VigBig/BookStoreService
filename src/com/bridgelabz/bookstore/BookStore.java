@@ -36,11 +36,35 @@ public class BookStore {
 
     public void displayBooks() {
 
-        for (Books bookElement:
-             booksList) {
+        for (Books bookElement: booksList) {
 
             System.out.println(bookElement);
 
+        }
+
+    }
+
+    public void deleteBook() {
+
+        boolean isBookExist = false;
+
+        System.out.println("Enter Book Name :");
+        String bookName = sc.next();
+
+        for (Books bookElement: booksList) {
+
+            if(bookElement.getBookName().equalsIgnoreCase(bookName)){
+
+                booksList.remove(bookElement);
+                System.out.println("Book : "+bookName+" has been removed.");
+                isBookExist = true;
+
+            }
+
+        }
+
+        if(!isBookExist){
+            System.out.println("Book : "+bookName+" doesn't exist.");
         }
 
     }
