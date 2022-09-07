@@ -13,10 +13,11 @@ public class BookStoreMain {
 
         do{
 
-            System.out.println("Select options (1 to 3) in the menu. Entering anything else will exit:");
+            System.out.println("Select options (1 to 4) in the menu. Entering anything else will exit:");
             System.out.println("1. Add Books");
             System.out.println("2. Display Books");
             System.out.println("3. Delete Book");
+            System.out.println("4. Search Book by Name or Author");
             choice = sc.nextInt();
 
             switch (choice){
@@ -30,12 +31,15 @@ public class BookStoreMain {
                 case 3:
                     bookStore.deleteBook();
                     break;
+                case 4:
+                    bookStore.searchBook();
+                    break;
                 default:
                     System.out.println("Exiting program ...");
 
             }
 
-        }while(choice>=1 && choice<=3);
+        }while(choice>=1 && choice<=4);
 
 
 
