@@ -9,6 +9,9 @@ public class BookStoreMain {
     public static void main(String[] args) {
         System.out.println("Welcome to Bookstore Service:");
         int choice =0 ;
+
+        System.out.println("Enter");
+
         BookStore bookStore = new BookStore();
 
         do{
